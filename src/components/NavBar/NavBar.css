@@ -1,0 +1,44 @@
+
+.header {
+    background-color: #87b093;
+    display: flex;
+}
+
+.logo {
+    width: 50%;
+}
+
+.logo h1 {
+    padding-left: 5rem;
+    font-size: 3rem;
+    margin: 0.3rem;
+    color: #1b272b;
+}
+
+.nav {
+    width: 50%;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+
+.navLink a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: all 1s ease;
+    
+}
+
+.navLink a:hover {
+    background-color: white;
+    color: #1b272b;
+}

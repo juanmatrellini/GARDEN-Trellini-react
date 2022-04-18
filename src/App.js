@@ -1,10 +1,14 @@
 import './App.css';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      CODERHOUSE REACT TRELLINI
-    </div>
+    <body>
+    <header>
+    <NavBar/>
+    </header>
+    </body>
+
   );
 }
 
