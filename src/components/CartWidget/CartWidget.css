@@ -1,0 +1,12 @@
+.Cart {
+    width: 45px;
+    color: white;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: all 1s ease;
+}
+
+.Cart:hover {
+    background-color: white;
+    color: white;
+}

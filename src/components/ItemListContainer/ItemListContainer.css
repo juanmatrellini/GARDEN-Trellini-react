@@ -1,0 +1,15 @@
+.container {
+    height: 800px;
+    background-color: #a1c7ac;
+}
+
+.greeting {
+    color: #1b272b;
+    font-size: 35px;
+    transition: all 1s ease;
+    text-align: center;
+}
+
+.greeting:hover {
+    background-color: black;
+}
