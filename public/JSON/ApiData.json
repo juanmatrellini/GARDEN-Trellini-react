@@ -1,0 +1,146 @@
+[
+    {
+      "price": 1800,
+      "id": 1,
+      "tipo": "gin",
+      "title": "GIN BOSQUE",
+      "file": "./Imag/bosque1.jpg",
+      "stock": 7
+    },
+    {
+      "price": 2200,
+      "id": 2,
+      "tipo": "gin",
+      "title": "GIN BUENOS AIRES",
+      "file": "./Imag/buenosaires.jpg",
+      "stock": 16
+    },
+    {
+      "price": 2000,
+      "id": 3,
+      "tipo": "gin",
+      "title": "GIN JAIPUR",
+      "file": "./Imag/jaipur.jpg",
+      "stock": 26
+    },
+    {
+      "price": 3800,
+      "id": 4,
+      "tipo": "box",
+      "title": "SMALL BOX",
+      "file": "./Imag/smallabierta-01.jpg",
+      "stock": 34
+    },
+    {
+      "price": 1400,
+      "id": 5,
+      "tipo": "minibox",
+      "title": "MINI CLASICA",
+      "file": "./Imag/minibox-01.jpg",
+      "stock": 47
+    },
+    {
+      "price": 4800,
+      "id": 6,
+      "tipo": "box",
+      "title": "BIG BOX",
+      "file": "./Imag/bigabierta-01.jpg",
+      "stock": 50
+    },
+    {
+        "price": 2400,
+        "id": 7,
+        "tipo": "gin",
+        "title": "GIN HEREDERO",
+        "file": "./Imag/heredero-01.jpg",
+        "stock": 10
+      },
+      {
+        "price": 1700,
+        "id": 8,
+        "tipo": "gin",
+        "title": "GIN CASAROSA",
+        "file": "./Imag/casarosa.jpg",
+        "stock": 14
+      },
+      {
+        "price": 2300,
+        "id": 9,
+        "tipo": "gin",
+        "title": "GIN MERLE",
+        "file": "./Imag/merle-01.jpg",
+        "stock": 15
+      },
+      {
+        "price": 320,
+        "id": 10,
+        "tipo": "tonica",
+        "title": "FEVER TREE",
+        "file": "./Imag/tonic-01.jpg",
+        "stock": 18
+      },
+      {
+        "price": 1200,
+        "id": 11,
+        "tipo": "minibox",
+        "title": "MINI PREMIUM",
+        "file": "./Imag/miniprem-01.jpg",
+        "stock": 32
+      },
+      {
+        "price": 200,
+        "id": 12,
+        "tipo": "tonica",
+        "title": "SANTA QUINA",
+        "file": "./Imag/santaquina-01.jpg",
+        "stock": 40
+      },
+      {
+        "price": 250,
+        "id": 13,
+        "tipo": "tonica",
+        "title": "BRITVIC",
+        "file": "./Imag/britvic-01.jpg",
+        "stock": 40
+      },
+      {
+        "price": 1900,
+        "id": 14,
+        "tipo": "gin",
+        "title": "GIN ACONCAGUA",
+        "file": "./Imag/aconcagua3-01.jpg",
+        "stock": 12
+      },
+      {
+        "price": 2500,
+        "id": 15,
+        "tipo": "gin",
+        "title": "GIN HILBING",
+        "file": "./Imag/hilbing-01.jpg",
+        "stock": 15
+      },
+      {
+        "price": 800,
+        "id": 16,
+        "tipo": "accesorio",
+        "title": "COPON",
+        "file": "./Imag/copondegin-01.jpg",
+        "stock": 25
+      },
+      {
+        "price": 900,
+        "id": 17,
+        "tipo": "accesorio",
+        "title": "JIGGER",
+        "file": "./Imag/jigger-01.jpg",
+        "stock": 30
+      },
+      {
+        "price": 700,
+        "id": 18,
+        "tipo": "accesorio",
+        "title": "CUCHARA",
+        "file": "./Imag/cuchara-01.jpg",
+        "stock": 20
+      }
+]

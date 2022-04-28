@@ -1,0 +1,24 @@
+.itemContainer {
+    margin-top: 3rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+    background-color: #e7e7e7;
+    -webkit-box-shadow: 0px 5px 15px 1px #87b090; 
+    box-shadow: 0px 5px 15px 1px #87b090;
+    padding: 1rem;
+}
+.itemContainer h2 {
+    padding: 0rem;
+    margin-top: 0rem;
+}
+
+.itemContainer h3 {
+    padding: 0rem;
+    margin-bottom: 0rem;
+}
+
+.itemContainer img {
+    width: 272px;
+    height: 272px;
+}

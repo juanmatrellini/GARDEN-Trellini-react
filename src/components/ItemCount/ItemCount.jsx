@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import "./ItemCount.css"
 
-export const ItemCount = (props) => {
-    const [count, setCount] = useState(props.initial)
+export const ItemCount = ({initial, stock}) => {
+    const [count, setCount] = useState(initial)
 
     const handleAdd = () => {
-        if (count < props.stock) {
-            return setCount (count + 1)
+        if (count < stock) {
+            return setCount(count + 1)
         }
     }
 
     const handleLess = () => {
-        if (count > props.initial) {
+        if (count > initial) {
             return setCount(count - 1)
         } else if (count > 0 && count <= 1) {
             return count
@@ -19,15 +19,12 @@ export const ItemCount = (props) => {
     }
 
     const buy = () => {
-        console.log("Ha comprado " + count + " productos!")
+        alert(`Ha comprado ${count} productos`)
     }
-
-   
 
     return (
         <div>
             <div className="ItemCount">
-                <h2>Producto 1</h2>
                 <button className="btnLess" onClick={handleLess}>-</button>
                 <span className="count">{count}</span>
                 <button className="btnAdd" onClick={handleAdd}>+</button>

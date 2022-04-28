@@ -1,14 +1,13 @@
 .ItemCount {
-    border: 2px solid black;
     text-align: center;
-    padding: 2rem 0rem 2rem 0rem;
+    padding: .3rem 0rem 1rem 0rem;
 }
 
 .btnLess {
-    padding: 0.8rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    font-size: 35px;
+    padding: 0.3rem;
+    padding-right: .4rem;
+    padding-left: .4rem;
+    font-size: 20px;
     font-weight: bold;
     background-color: #1b272b;
     color: #87b093;
@@ -20,8 +19,8 @@
 }
 
 .btnAdd {
-    padding: 0.8rem;
-    font-size: 35px;
+    padding: 0.3rem;
+    font-size: 20px;
     font-weight: bold;
     background-color: #1b272b;
     color: #87b093;
@@ -34,37 +33,34 @@
 }
 
 .btnAdd:hover, .btnLess:hover {
-    font-size: 40px;
     background-color: white;
 }
 
 .count {
-    background-color: #e7e7e7;
-    padding: 1.5rem;
+    background-color: #95b19e;
+    padding: .5rem;
+    border: 1px solid #1b272b;
     text-align: center;
-}
-.divBuy {
-    text-align: center;
-}
-.count {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     color: #1b272b;
 }
 
+
 .btnBuy {
     text-align: center;
-    margin-top: 1rem;
+    margin-bottom: .3rem;
     padding: .5rem;
+    color: white;
     border-radius: 10px;
     border: 3px solid #1b272b;
     background-color: #87b093;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
+    letter-spacing: .2rem;
     transition: .5s all ease-in-out;
 }
 
 .btnBuy:hover {
-    font-size: 25px;
     cursor: pointer;
 }
