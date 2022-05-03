@@ -16,9 +16,11 @@ export const ItemListContainer = () => {
     setTimeout(() => fetchData(), 2000);
   }, [])
 
+
+
   return (
     <div className="container">
       <ItemList products={products} />
-    </div>
+      </div>
   );
 };

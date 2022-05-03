@@ -63,4 +63,6 @@
 
 .btnBuy:hover {
     cursor: pointer;
+    background-color: #1b272b;
+    color: #95b19e;
 }

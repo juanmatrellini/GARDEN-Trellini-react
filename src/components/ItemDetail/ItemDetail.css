@@ -1,0 +1,35 @@
+.itemDetail {
+    margin: 1.3rem 15rem 3rem 15rem;
+    display: flex;
+    justify-content: center;
+}
+
+.imgDetail {
+    width: 342px;
+    height: 342px;
+    border-top: 3px solid #1b272b;
+    border-left: 3px solid #1b272b;
+    border-bottom: 3px solid #1b272b;
+}
+
+.detailBody {
+    border: 3px solid black;
+    align-items: center;
+    width: 50%;
+}
+
+.detailInfo {
+    padding: 0rem 3rem;
+}
+
+.detailBody h2 {
+    text-align: center;
+}
+
+.detailBody h3 {
+    text-align: center;
+}
+
+.divBuy {
+    text-align: center;
+}
