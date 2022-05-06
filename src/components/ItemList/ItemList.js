@@ -10,7 +10,7 @@ const ItemList = ({ products }) => {
                 return (
                     <Item key={product.id} file={product.file}
                         title={product.title} price={product.price}
-                        stock={product.stock} />
+                        stock={product.stock} id={product.id} />
                 )
             })
             }

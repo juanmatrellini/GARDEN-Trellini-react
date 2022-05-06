@@ -1,7 +1,0 @@
-.container {
-    margin: 1.3rem 10rem 3rem 10rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-
-}

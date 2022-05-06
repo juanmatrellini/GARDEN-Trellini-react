@@ -11,8 +11,8 @@ const ItemDetail = ({item}) => {
         <div className='detailBody'>
             <h2>{item.title}</h2>
             <p className='detailInfo'>{item.info}</p>
-            <h3>{item.price}</h3>
-            <ItemCount/>
+            <h3>$ {item.price}</h3>
+            <ItemCount initial={1} stock={item.stock}/>
         </div>
         
     </div>
