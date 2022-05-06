@@ -1,14 +1,12 @@
 import React from 'react'
 import './CartWidget.css'
-import Cart from './Img/Cart.png'
+import { FaShoppingCart } from 'react-icons/fa'
 
 
-const CartWidget = ()  => {
-    return (
-        <>
-        <img className='Cart' src={Cart} alt="" />
-        </>
-    )
-}
+class CartWidget extends React.Component {
+    render() {
+      return <FaShoppingCart className='cart'/>
+    }
+  }
 
 export default CartWidget

@@ -1,0 +1,46 @@
+.buttonDiv {
+    text-align: center;
+}
+
+.buttonBack{
+    margin-top: 1rem;
+    padding: .7rem;
+    background-color: #1b272b;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    transition: all .4s ease;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+}
+
+.buttonBack::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #87b093;
+    z-index: 1;
+    top: -80px;
+    left: 0;
+    transition: all .4s ease-in;
+}
+
+.buttonBack span {
+    position: relative;
+    z-index: 2;
+    transition: all .4s ease;
+}
+
+.buttonBack:hover {
+    border: 2px solid #1b272b;
+    color: #1b272b;
+}
+
+.buttonBack:hover::after {
+    top: 0;
+}
