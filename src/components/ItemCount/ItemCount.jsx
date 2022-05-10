@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ItemCount.css"
 
-export const ItemCount = ({initial, stock}) => {
+export const ItemCount = ({initial, stock, onAdd}) => {
     const [count, setCount] = useState(initial)
 
     const handleAdd = () => {
@@ -18,10 +18,6 @@ export const ItemCount = ({initial, stock}) => {
         }
     }
 
-    const buy = () => {
-        alert(`Ha comprado ${count} productos`)
-    }
-
     return (
         <div>
             <div className="ItemCount">
@@ -30,7 +26,7 @@ export const ItemCount = ({initial, stock}) => {
                 <button className="btnAdd" onClick={handleAdd}>+</button>
             </div>
             <div className="divBuy">
-                <button className="btnBuy" onClick={buy}>COMPRAR</button>
+                <button className="btnBuy" onClick={() => onAdd(count)}>COMPRAR</button>
             </div>
         </div>
     );

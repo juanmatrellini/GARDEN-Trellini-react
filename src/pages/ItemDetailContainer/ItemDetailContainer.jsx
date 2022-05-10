@@ -1,9 +1,9 @@
 import { React, useState, useEffect } from "react";
 import "./ItemDetailContainer.css"
 import ItemDetail from '../../components/ItemDetail/ItemDetail'
-import { useParams } from "react-router-dom";
+import { useParams, NavLink } from "react-router-dom";
 import PropagateLoader from "react-spinners/PropagateLoader";
-import ButtonBack from "../../components/ButtonBack/ButtonBack";
+import ButtonDefault from "../../components/ButtonDefault/ButtonDefault";
 
 
 
@@ -41,7 +41,7 @@ export const ItemDetailContainer = () => {
         <div className="detailContainer">
           <ItemDetail item={item} />
         </div>
-        <ButtonBack />
+        <NavLink to='/'><ButtonDefault title={"Volver"} /></NavLink>
         </>
         
 

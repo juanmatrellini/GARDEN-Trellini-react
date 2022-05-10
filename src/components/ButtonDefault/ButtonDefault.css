@@ -2,7 +2,7 @@
     text-align: center;
 }
 
-.buttonBack{
+.buttonDefault{
     margin-top: 1rem;
     padding: .7rem;
     background-color: #1b272b;
@@ -10,7 +10,7 @@
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
-    border: none;
+    border: 2px solid #1b272b;
     cursor: pointer;
     transition: all .4s ease;
     border-radius: 7px;
@@ -18,7 +18,7 @@
     overflow: hidden;
 }
 
-.buttonBack::after {
+.buttonDefault::after {
     content: '';
     width: 100%;
     height: 100%;
@@ -30,17 +30,17 @@
     transition: all .4s ease-in;
 }
 
-.buttonBack span {
+.buttonDefault span {
     position: relative;
     z-index: 2;
     transition: all .4s ease;
 }
 
-.buttonBack:hover {
+.buttonDefault:hover {
     border: 2px solid #1b272b;
     color: #1b272b;
 }
 
-.buttonBack:hover::after {
+.buttonDefault:hover::after {
     top: 0;
 }
