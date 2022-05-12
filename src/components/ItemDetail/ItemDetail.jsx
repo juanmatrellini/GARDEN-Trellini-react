@@ -3,18 +3,20 @@ import "./ItemDetail.css"
 import ItemCount from '../ItemCount/ItemCount'
 import ButtonDefault from '../ButtonDefault/ButtonDefault'
 import { NavLink } from 'react-router-dom'
+import { useCartContext } from '../context/CartContextProvider'
 
 const ItemDetail = ({item}) => {
   const [bought, setBought] = useState(false)
+  const {addItem, unitsPerProduct} = useCartContext();
+
 
 const onAdd = (count) => {
-  if (count == 1) {
-    alert(`Agregaste ${count} producto al carrito.`)
-  } else {
-    alert(`Agregaste ${count} productos al carrito.`)
+  if (count + unitsPerProduct(item.id) > item.stock) {
+    const availableToAdd = item.stock - unitsPerProduct(item.id)
+    return alert(`Solo puede agregar ${availableToAdd} productos`)
   }
-  
   setBought(true)
+  addItem(item, count)
 
 }
 

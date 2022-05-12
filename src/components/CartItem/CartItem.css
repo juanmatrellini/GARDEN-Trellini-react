@@ -1,0 +1,40 @@
+.cartItem {
+    padding: 1rem;
+    border-bottom: 2px solid black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cartItem img {
+    width: 150px;
+}
+
+.cartItem h1 {
+    font-size: 30px;
+}
+
+.cartItem h4 {
+    font-size: 16px;
+}
+
+.cartItem button {
+    padding: .5rem;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: 1b272b;
+    background-color: #87b093;
+    transition: all 0.6s ease;
+}
+
+
+.btnPlus:hover {
+    transform: scale(1.1);
+}
+
+.btnMiss:hover {
+    transform: scale(0.8);
+}
