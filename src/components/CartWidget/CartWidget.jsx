@@ -1,16 +1,17 @@
 import React from 'react'
 import './CartWidget.css'
 import { FaShoppingCart } from 'react-icons/fa'
-import { useCartContext } from '../context/CartContextProvider'
+// import { useCartContext } from '../context/CartContextProvider'
 import { NavLink } from 'react-router-dom'
 
-const CartWidget = () => {
-  const {totalCount} = useCartContext();
+const CartWidget = ({itemQ}) => {
+  // const {totalCount} = useCartContext();
   return (
     <NavLink to='/cart'>
-      <FaShoppingCart className='cart'/>
-      <span>{totalCount()}</span>
-    </NavLink>
+    <FaShoppingCart className='cart'/>
+    <span>{itemQ}</span>
+  </NavLink>
+    
   )
 }
 

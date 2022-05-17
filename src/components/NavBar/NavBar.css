@@ -113,3 +113,8 @@
     background-color: white;
     color: #1b272b;
 } */
+
+.cartNone {
+    visibility: hidden;
+    color: #87b093;
+}

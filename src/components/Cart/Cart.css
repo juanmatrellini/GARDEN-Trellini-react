@@ -1,8 +1,10 @@
 .cartDiv {
     text-align: center;
-    margin: 7rem 15rem;
+    margin: 12rem 25rem;
     border: 2px solid black;
     background-color: #e7e7e7;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .cartTotal {
@@ -28,7 +30,6 @@
 }
 
 .btnContinue {
-    margin: 2rem;
     padding: .5rem;
     font-size: 18px;
     font-weight: bold;

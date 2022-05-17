@@ -8,13 +8,13 @@ const CartContextProvider = ( {children} ) => {
     const [cartList, setCartList] = useState([]);
 
     const inCart = (id) => {
-        return cartList.some((item) => item.id == id);
+        return cartList.some((item) => item.id === id);
     };
 
     const addItem = (item, quantity) => {
         if (inCart(item.id)) {
             return setCartList(
-                cartList.map((product) => product.id == item.id 
+                cartList.map((product) => product.id === item.id 
                 ? {...product, quantity: product.quantity + quantity} 
                 : product
                 )
@@ -37,7 +37,7 @@ const CartContextProvider = ( {children} ) => {
         }
         setCartList(
             cartList.map((product) =>
-            product.id == id
+            product.id === id
             ? {...product, quantity: product.quantity -1}
             : product
             )
@@ -47,7 +47,7 @@ const CartContextProvider = ( {children} ) => {
     const addOneUnit = (id) => {
         setCartList(
             cartList.map((product) =>
-            product.id == id
+            product.id === id
             ? {...product, quantity: product.quantity +1}
             : product
             )
@@ -63,7 +63,7 @@ const CartContextProvider = ( {children} ) => {
     };
 
     const unitsPerProduct = (id) => {
-        const foundInCart = cartList.find((item) => item.id == id);
+        const foundInCart = cartList.find((item) => item.id === id);
         return foundInCart ? foundInCart.quantity : 0
     }
 

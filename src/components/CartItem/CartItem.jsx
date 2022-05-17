@@ -1,6 +1,5 @@
 import React from 'react'
 import "./CartItem.css"
-import ButtonDefault from '../ButtonDefault/ButtonDefault'
 
 import { useCartContext } from '../context/CartContextProvider'
 

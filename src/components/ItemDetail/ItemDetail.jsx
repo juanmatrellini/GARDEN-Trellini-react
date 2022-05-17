@@ -8,15 +8,18 @@ import { useCartContext } from '../context/CartContextProvider'
 const ItemDetail = ({item}) => {
   const [bought, setBought] = useState(false)
   const {addItem, unitsPerProduct} = useCartContext();
+  
 
 
-const onAdd = (count) => {
+const onAdd = (count, stockAvailable) => {
   if (count + unitsPerProduct(item.id) > item.stock) {
     const availableToAdd = item.stock - unitsPerProduct(item.id)
     return alert(`Solo puede agregar ${availableToAdd} productos`)
   }
   setBought(true)
   addItem(item, count)
+  
+  
 
 }
 
