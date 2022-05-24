@@ -1,6 +1,6 @@
 import CartItem from "../CartItem/CartItem";
 import "./Cart.css"
-import {NavLink} from "react-router-dom"
+import {Link} from "react-router-dom"
 import { useCartContext } from "../context/CartContextProvider";
 import ButtonDefault from "../../components/ButtonDefault/ButtonDefault";
 
@@ -19,16 +19,16 @@ const Cart = () => {
         <>
         <div className="cartTotal">
             <h1>Total: $ {totalPrice()}</h1>
-            <NavLink to='/'><button className="btnContinue">Seguir Comprando</button></NavLink>
+            <Link to='/'><button className="btnContinue">Seguir Comprando</button></Link>
             <button className="btnEmpty" onClick={() => emptyCart()}>Vaciar Carrito</button>
-            <ButtonDefault title={"TERMINAR COMPRA"} />
+            <Link to='/checkout'><ButtonDefault title={"TERMINAR COMPRA"} /></Link>
         </div>
         </>
     )
 : (
         <>
             <h1>El carrito está vacío. Comience a comprar!</h1>
-            <NavLink to='/'><ButtonDefault title={"VER PRODUCTOS"} /></NavLink>
+            <Link to='/'><ButtonDefault title={"VER PRODUCTOS"} /></Link>
         </>
     )}
         </div>

@@ -1,0 +1,40 @@
+.checkOutDiv {
+    margin-top: 10rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    padding: 5rem;
+    text-align: center;
+    border: #e7e7e7 2px solid;
+}
+
+.checkOutDiv h1 {
+    margin-top: 1rem;
+}
+
+.checkOutDiv h4 {
+    font-size: 20px;
+}
+
+.checkOutForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkOutForm input {
+    font-size: 18px;
+    font-weight: bold;
+    padding: .5rem;
+    margin-top: 1rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.checkOutForm input:focus {
+    border: #87b093;
+}
+
+.loader {
+    justify-content: center;
+    text-align: center;
+    margin-top: 8rem;
+}
