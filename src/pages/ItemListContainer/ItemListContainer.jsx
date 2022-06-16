@@ -28,7 +28,7 @@ export const ItemListContainer = () => {
       console.log(error)
     }
   }
-
+  
   useEffect(() => {
     getData(categoryId)
     }, [categoryId]);

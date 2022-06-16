@@ -20,6 +20,7 @@ Se puede descargar el repositorio del proyecto en formato .zip
 
     npm start
 
+
 ## Instalacion -Clone.-
 
 También podrá observar el proyecto clonandolo.
@@ -34,6 +35,8 @@ Y luego deberá seguir los pasos 3 y 4 de la otra forma de instalacion.
 Luego
 
     npm start
+
+
 ## Dependencias
 
 Las dependencias utilizadas en este proyecto son:
@@ -41,6 +44,9 @@ Las dependencias utilizadas en este proyecto son:
     + react-router-dom
     + react-icons
     + react-spinners
+    react-toastify
+
+
 ## Desarrollo
 
 El proyecto ha sido desarrollado con:

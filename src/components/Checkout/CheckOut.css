@@ -1,14 +1,28 @@
 .checkOutDiv {
-    margin-top: 10rem;
+    margin-top: 6.5rem;
     margin-left: 20rem;
     margin-right: 20rem;
     padding: 5rem;
     text-align: center;
-    border: #e7e7e7 2px solid;
+    border: #1b272b 2px solid;
+    background-color: #87b093;
+    -webkit-box-shadow: 0px 5px 15px 1px #87b090; 
+    box-shadow: 0px 5px 15px 1px #6d6a6aa6;
+    animation-duration: 1s;
+    animation-name: aparecer;
 }
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
 .checkOutDiv h1 {
     margin-top: 1rem;
+    font-size: 40px;
 }
 
 .checkOutDiv h4 {
@@ -18,6 +32,7 @@
 .checkOutForm {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 .checkOutForm input {
@@ -27,14 +42,29 @@
     margin-top: 1rem;
     margin-left: 15rem;
     margin-right: 15rem;
+    font-family: 'Fira Sans', sans-serif;
+    
 }
 
 .checkOutForm input:focus {
     border: #87b093;
 }
 
-.loader {
-    justify-content: center;
-    text-align: center;
-    margin-top: 8rem;
+.finished {
+    height: 350px;
+}
+
+.finished h2 {
+    font-size: 25px;
+    padding-top: 5rem;
+
+}
+.finished p {
+    font-size: 30px;
+    padding: 3rem;   
+}
+
+.finished h3 {
+    font-size: 40px;
+    text-align: end;
 }

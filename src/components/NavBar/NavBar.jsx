@@ -15,16 +15,13 @@ function NavBar(props) {
             </div>
             <div className='nav'>
                 <ul className='list'>
-                    <li className='navLink link1'><NavLink to='/'>Home</NavLink></li>
+                    <li className='navLink link1'><NavLink to='/'>Inicio</NavLink></li>
                     <li className='navLink'><NavLink to='/category/gin'>Gins</NavLink></li>
                     <li className='navLink'><NavLink to='/category/minibox'>Minibox</NavLink></li>
                     <li className='navLink'><NavLink to='/category/box'>Box de madera</NavLink></li>
                     <li className='navLink'><NavLink to='/category/accesorio'>Accesorios</NavLink></li>
                     <li className='navLink'><NavLink to='/category/tonica'>Tonicas</NavLink></li>
-                    {totalCount() > 0
-                     ?   <li className='navLink'><CartWidget itemQ={totalCount()}/></li>
-                     :  <li className='navLink cartNone'><CartWidget/></li>
-                    }
+                    <li className='navLink'><NavLink to='/cart'><CartWidget itemQ={totalCount()}/></NavLink></li>
                 </ul>
             </div>
         </nav>

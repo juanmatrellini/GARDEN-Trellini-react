@@ -31,7 +31,6 @@ function Checkout() {
             const col = collection (db, 'orders');
             const order = await addDoc(col, dataOrder);
             setId(order.id)
-            console.log(orderId)
             emptyCart();
             setLoading(false);
         } catch (error) {
@@ -66,7 +65,7 @@ function Checkout() {
                     <input 
                         type="text"
                         name="Name"
-                        placeholder="Name"
+                        placeholder="Nombre"
                         value={Name} 
                         onChange={handleInputChange}
                         required
@@ -82,7 +81,7 @@ function Checkout() {
                     <input 
                         type="number"
                         name="PhoneNumber"
-                        placeholder="Phone Number"
+                        placeholder="Telefono"
                         value={PhoneNumber} 
                         onChange={handleInputChange}
                         required
@@ -95,9 +94,12 @@ function Checkout() {
             ) }
 
         {orderId &&
-            <div>
-                <h2>Su compra ha sido exitosa.</h2>
-                <p>Su número de orden es : {orderId}.</p>
+            <div className='finished'>
+                <h2>MUCHAS GRACIAS POR SU COMPRA!.</h2>
+                <p>Su número de orden es : {orderId}. <br />
+                Recibirá un mail con su factura.
+                </p>
+                <h3>GARDEN</h3>
             </div>}
         
     </div>

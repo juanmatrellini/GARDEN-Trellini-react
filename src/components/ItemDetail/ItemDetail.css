@@ -40,3 +40,8 @@
 .divBuy {
     text-align: center;
 }
+
+.toastify-css {
+    margin-top: 5rem;
+    font-size: 20px;
+}
